@@ -1,0 +1,1284 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 75%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Archivo', 'Helvetica', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.container {
+    background-color: white;
+    overflow: hidden;
+}
+
+.section-content {
+    width: 1100px;    
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 48px  24px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clear {
+    clear: both;
+}
+
+.bg-maroon {
+    background-color: maroon !important;
+}
+
+.cl-white-05 {
+    color: rgba(255,255,255,0.5) !important;
+}
+
+.cl-white {
+    color: #ffffff !important;
+}
+
+.gradient-black {
+    background: linear-gradient(0deg, #000000 0%, transparent 60%);
+}
+
+
+/* NAVIGATION */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 10px;
+}
+
+nav a {
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 600;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    padding: 18px 40px;
+    text-align: center;
+}
+
+nav a:hover, nav a.active{
+    color:maroon;
+    border-bottom: 3px solid maroon;
+}
+
+/* Footer */
+footer {
+    background-image: url('Footer.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #919191;
+    padding: 48px 20px 32px;
+    text-align: center;
+}
+
+.footer-note {
+    font-family: 'Dela Gothic One';
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 50px;
+    position: relative;
+}
+
+.marquee-text {
+    font-family: 'Dela Gothic One';
+    font-size: 28px;
+    color: white;
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+    text-align: center;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: calc(100% / 16);
+    padding-bottom: 32px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    width: 45%;
+}
+
+.footer-right {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.footer-left h2 {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.footer-left input {
+    width: 100%;
+    padding: 10px 4px 4px 2px;
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #e4e3e3ab;
+    display: block;
+    font-family: "Archivo";
+    font-weight: 100;
+    font-size: 2.4rem;
+    letter-spacing: 0.5px;
+}
+
+.send-button {
+    display: block;
+    font-family: "Archivo" , "Helvetica";
+    padding: 9px 20px 6px 20px;
+    margin-top: 2.4rem;
+    border: 1px solid white;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 1.2;
+    border-radius: 30px;
+}
+
+.send-button img {
+    height: 2.4rem;
+    position: relative;
+    top: 0.3rem;
+    margin-left: 1.8rem;
+}
+
+.send-button:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: rgba(128, 0, 0, 0.5) 0px 6px 10px 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 80px;
+    justify-content: flex-start;
+}
+
+.links-column {
+    flex: 1;
+}
+
+.links-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.links-column li {
+    margin: 0.4rem 1rem 1.8rem 0;
+    cursor: pointer;
+    font-size: 1.9rem;
+    font-weight: 300;
+    transition: 0.15s ease;
+}
+
+.links-column li:hover {
+    color: white;
+}
+
+/* NCT */
+/* Intro section */
+.intro {
+    display: flex;
+    font-size: 1.7rem;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%), 
+                linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 40%), 
+                url(Victory_in_Battle_of_Dien_Bien_Phu.jpg) 50% 25% / cover no-repeat;
+    min-height: 400px;
+    height: 100vh;
+}
+
+.intro .section-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 23rem;
+}
+
+h2.intro_1 {
+    font-size: 2.2em;
+    color: maroon;
+    border-right: 10px solid maroon;
+    text-transform: uppercase;
+    text-align: right;
+    padding-right: 16px;
+    font-weight: 900;
+    height: fit-content;
+    line-height: 1.2;
+    letter-spacing: 0.8px;
+}
+
+.intro p {
+    margin: 0px 0px 16px 24px;
+    font-weight: 200;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+/* NCT section */
+.nct {
+    display: flex;
+    gap: 3.2rem;
+    font-size: 1.8rem;
+}
+
+.nct h2 {
+    text-transform: uppercase;
+    font-size: 2.1em;
+    font-weight: 300;
+    margin: 4rem 0 -1rem 0;
+}
+
+.nct h1 {
+    font-size: 2.8em;
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+    color: maroon;
+    font-family: Dela Gothic One; 
+    letter-spacing: -1.2px; 
+}
+
+.nct h3 {
+    font-style: italic;
+    font-size: 1.6em;
+    font-weight: 300;
+    margin-bottom: 1.6rem;
+}
+
+.nct p {
+    font-weight: 200;
+    line-height: 1.3;
+    padding-right: 1rem;
+    letter-spacing: 0.3px;
+    text-align: justify;
+}
+
+.nct img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Quote section*/
+.quote {
+    font-size: 3.5rem;
+    font-style: italic;
+    text-align: center;
+    color: maroon;
+    margin: 1.7em auto;
+}
+
+/* Summary section*/
+.summary {
+    width: 100vw;
+    background: linear-gradient(0deg, #000000 0%, transparent 90%);
+    padding-bottom: 6rem;
+}
+
+.summary .section-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-third {
+    width: calc((100% - 56px) / 3);
+    min-height: 380px;
+    perspective: 1000px;
+}
+
+.flip-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: ease 0.8s;
+}
+
+.col-third:hover .flip-box {
+    transform: rotateY(180deg);
+}
+
+.flip-box .front, .flip-box .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-box .front-div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.flip-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip-box h3 {
+    font-size: 3.2rem;
+    font-family: "Dela Gothic One", 'Helvetica', 'Helvetica', sans-serif;
+    font-weight: 400;
+    width: 100%;
+}
+
+.flip-box .front h3 {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 0.5em;
+    color: maroon;
+}
+
+.flip-box .back {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: maroon;
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+.flip-box .back h3 {
+    padding: 1.2rem 0 1.6rem 2.4rem;
+    line-height: 1;
+    border-bottom: 3px white solid;
+}
+
+.flip-box .back p {
+    min-height: 200px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding: 1.6rem 4.6rem 2.3rem 2.4rem;
+    position: relative;
+}
+
+.flip-box .back p::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 3rem;
+    min-height: 380px;
+    background-color: #ffffff;
+    width: 1px;
+}
+
+#pdr-62 { padding-right: 6.2rem;} 
+#pdr-82 { padding-right: 8.2rem; }
+
+
+
+/* AUTOBIOGRAPHY */
+/* Bio section */
+.wrapper1 {
+    background: url(bg_auto.png) 55% 45% / cover no-repeat;
+    height: 110vh;
+}
+
+.bio {
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.bio-title {
+    font-size: 9rem;
+    color: maroon;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: Dela Gothic One;
+    letter-spacing: 2px;
+    margin-bottom: 0.45em;
+    display: block;
+}
+
+.bio p {
+    font-size: 1.7rem;
+    font-weight: 200;
+    max-width: 100%;
+}
+
+p.left {
+    width: 320px;
+}
+
+p.right {
+    width: 240px;
+    position: absolute;
+    bottom: 170px;
+    right: 24px;
+    text-align: right;
+}
+
+/* Timeline section */
+.timeline {
+    width: 100%;
+    background: linear-gradient(0deg, #000000 0%, transparent 10%);
+    padding-bottom: 60px;
+}
+
+.timeline .section-content {
+    position: relative;
+    margin: auto;
+    
+}
+
+.timeline .section-content::after {
+    content: '';
+    position: absolute;
+    --tl-width: 8px;
+    width: var(--tl-width);
+    background: maroon;
+    top: -24px;
+    bottom: 132px;
+    left: 50%;
+    margin-left: calc((var(--tl-width)*-1)/2);
+}
+
+.tl-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+}
+
+.tl-item {
+    width: 45%;
+    font-size: 1.7rem;
+}
+
+p.tl-item, .tl-item p { 
+    padding: 20px 28px 20px 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: rgba(27, 27, 27, 0.3) 0px 2px 32px 2px;
+    line-height: 1.2;
+    transition: ease 0.3s;
+}
+
+p.tl-item:hover, .tl-item p:hover { 
+    transform: translateY(-4px);
+    background: maroon;
+    color: white;
+}
+
+h3.tl-item {
+    font-family: "Unbounded", 'Helvetica', 'Helvetica', 'Helvetica', sans-serif;
+    font-size: 2.3em;
+    color: maroon; 
+    font-weight: 700;
+}
+
+.tl-left { left: 0; position: relative; }
+.tl-right { left: 55%; }
+h3.tl-left { text-align: right; }
+
+.tl-left::before {
+    content: '';
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background: maroon;
+    border-radius: 50%;
+    top: calc(100%/2 - 17px);
+    left: calc(100% + (100% / 9) - 16.5px);
+}
+
+.tl-item img {
+    width: 100%;
+}
+
+#bdradius-special-img {
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    bottom: -4px;
+}
+
+#bdradius-special-p {
+    border-radius: 0 0 20px 20px;
+}
+
+#nodot::before {
+    display: none;
+}
+
+.autoShow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+}
+
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* WAR */
+/* Chaos Banner */
+.chaos-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chaos-banner h1 {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 100px;
+    color: black;
+    margin-bottom: 40px;
+}
+
+.chaos-banner .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 5vw 6rem;
+    background: transparent;
+}
+
+.chaos-banner .card {
+    position: relative;
+    flex: 1;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: flex 0.4s ease;
+    cursor: pointer;
+}
+
+.chaos-banner .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: object-position 0.5s ease, filter 0.3s ease;
+    filter: grayscale(30%);
+}
+
+.chaos-banner .card:hover {
+    flex: 4;
+}
+
+.chaos-banner .card:
+
+.chaos-banner .container:hover .card:not(:hover) {
+    filter: grayscale(100%);
+}
+
+.chaos-banner .card:hover img {
+    object-position: center center;
+    filter: none;
+}
+
+.chaos-banner .card:nth-child(1) img { object-position: 75% 50%; }
+.chaos-banner .card:nth-child(2) img { object-position: 60% 50%; }
+.chaos-banner .card:nth-child(3) img { object-position: 45% 50%; }
+
+.chaos-banner .overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to top, rgba(44, 44, 44, 1), rgba(217, 217, 217, 0));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    text-align: center;
+    transition: height 0.4s ease;
+}
+
+.chaos-banner .card:hover .overlay {
+    height: 50%;
+}
+
+.chaos-banner .overlay .number {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: maroon;
+    position: absolute;
+    margin-bottom: 100px;
+}
+
+.chaos-banner .overlay .text {
+    font-family: 'Archivo', sans-serif;
+    font-size: 42px;
+    font-style: italic;
+    font-weight: 500;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.chaos-banner .card:hover .overlay .text {
+    opacity: 1;
+    transform: translateY(-20);
+}
+
+/* Chaos Section Title */
+.chaos-section-title {
+    padding: 6rem 0 6rem 3rem;
+    position: relative;
+}
+
+.chaos-section-title h2 {
+    font-size: 5rem;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.chaos-section-title h1 {
+    font-size: 7rem;
+    padding: 1rem 0 0 7rem;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: -1px;
+}
+
+.chaos-section-title p {
+    font-size: 32rem;
+    color: rgba(128, 0, 0, 0.4);
+    line-height: 1;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: -4px;
+    position: absolute;
+    right: -2.5rem; top: 0;
+}
+
+/* Chaos section 1 */
+.wrapper2 {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 60%), #800000;;
+}
+
+.chaos-section1 {
+    margin: 6rem 0 0;
+}
+
+.chaos-section1 h1 i {
+    display: block;
+}
+
+.chaos-section1 h1 {
+    font-size: 10.24rem;
+    color: black;
+    font-weight: 300;
+    margin-bottom: 6px;
+    max-width: 110vw;
+    text-align: center;
+}
+
+.chaos-section1-img {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin: 0.5rem 0 0 1.4rem;
+} 
+
+.chaos-section1-img img:first-child {
+    height: 100%;
+}
+
+.chaos-section1-h2 {
+    position: relative;
+    top: -6.45rem;
+}
+
+.chaos-section1 h2 {
+    font-size: 10.5rem;
+    font-weight: 300;
+    color: black;
+    display: block;
+    text-align: left;
+    line-height: 0.65;
+    padding-right: 0.9rem;
+}
+
+.chaos-section1-h2 h2:last-child {
+    text-align: right;
+    padding-right: 0.6em;
+}
+
+.chaos-section1 h2 span {
+    font-family: "Dela Gothic One", 'Helvetica', sans-serif;
+    position: relative;
+    font-size: 1.2em;
+    padding-left: 0.66rem;
+}
+
+.chaos-section1-h2 h2:first-child span {
+    top: -1.5rem;
+    right: -8px;
+    padding-left: 0.6rem;
+}
+
+.chaos-section1-p {
+    display: flex;
+    justify-content: right;
+}
+
+.chaos-section1 p {
+    width: 67rem;
+    max-width: 100%;
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: #ffffff;
+    text-align: justify;
+    margin: -0.8rem 14rem 0;
+    letter-spacing: 0.4px;
+    position: relative;  
+}
+
+.chaos-section1 p::before {
+    content: '';
+    height: 55rem;
+    width: 4px;
+    background: linear-gradient(180deg, #ffffff, transparent 75%), linear-gradient(180deg, maroon 40%, transparent);
+    position: absolute;
+    top: -1rem;
+    left: -14rem;
+}
+
+/* Chaos section 2 */
+.chaos-section2 {
+    background: linear-gradient(180deg, #800000 0%, rgba(255,255,255,0) 50%), 
+                linear-gradient(0deg, #ffffff 0%, transparent 20%),
+                url(image\ 133.png) 50% 40% / cover no-repeat ; 
+    min-height: 150vh;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+}
+
+.chaos-section2 p {
+    width: 67rem;
+    max-width: 100%;
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: #ffffff;
+    text-align: justify;
+    margin: 0 14rem 9.5rem;
+    letter-spacing: 0.4px;
+}
+
+/* Chaos section 3 */
+.chaos-section3 {
+    --width-col: calc((100% - (2 * 28px)) / 3);
+}
+
+.chaos-section3 .section-content {
+    width: 1270px;
+}
+
+.chaos-section3 .col-3 {
+    width: var(--width-col);
+}
+
+.chaos-section3 .col-3 p {
+    font-size: 1.8rem;
+    padding: 0 2rem 1rem 0;
+    font-weight: 200;
+}
+
+#chaos-section3-header {
+    font-size: 10rem;
+    color: maroon;
+    font-style: italic;
+    line-height: 0.8;
+    font-weight: 300;
+}
+
+.chaos-section3 .col-3 img {
+    width: 100%;
+}
+
+.chaos-section3-p {
+    display: flex;
+    justify-content: right;
+}
+
+.chaos-section3-p p {
+    font-size: 1.7rem;
+    letter-spacing: 0.4px; 
+    font-weight: 200;
+    text-align: justify;
+    padding: 6rem calc(var(--width-col) + 28px) 4rem 0;
+    width: 80rem;
+    max-width: 100%;
+    position: relative;
+}
+
+.chaos-section3-p p::before {
+    content: '';
+    height: 32rem;
+    width: 4px;
+    background: linear-gradient(0deg, maroon, transparent);
+    position: absolute;
+    left: calc((var(--width-col) / 4) * -1);
+    bottom: 2.6rem;
+}
+
+.chaos-section3-quote {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.chaos-section3-quote .quote-mark {
+    display: flex;
+    padding: 0.4em 3em;
+}
+
+.chaos-section3-quote p {
+    color: maroon;
+    font-size: 4.8rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.1;
+    font-style: italic;
+}
+
+.chaos-section3-quote span {
+    font-family: "Dela Gothic One", 'Helvetica', sans-serif;
+    font-size: 11rem;
+    color: maroon;
+    line-height: 0.7;
+    position: relative;
+}
+
+.chaos-section3-quote span:first-child {
+    top: -2rem;
+}
+
+.chaos-section3-quote span:last-child {
+    align-self: end;
+    top: 4rem;
+    left: -3rem;
+}
+
+.chaos-section3-quote img {
+    width: 335px;
+    max-width: 90vh;
+    padding-right: 1rem;
+}
+
+.chaos-section3-2p {
+    background: linear-gradient(180deg, #ffffff 0%, transparent 100%),
+                linear-gradient(0deg, maroon 0%, transparent 100%), 
+                url(Group\ 38.png);
+    font-size: 1.7rem;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.1;
+    padding: 0 3rem;
+}
+
+.chaos-section3-2p-left {
+    padding-right: 7rem;
+    font-weight: 300;
+}
+
+.chaos-section3-2p-right p {
+    font-style: italic;
+    border-bottom: 1px solid #000000;
+    padding: 1em 0;
+}
+
+.chaos-section3-2p-right p:first-child {
+    padding-top: 0;
+}
+
+.chaos-section3-2p-right p:last-child {
+    border-bottom: none;
+}
+
+.col-2 {
+    width: calc((100% - 80px) / 2)
+}
+
+/* Chaos Section 4 */
+.chaos-section4 .section-content {
+    width: 1300px;
+    display: flex;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.chaos-section4-left {
+    position: relative;
+    padding: 2rem 2rem 1rem 6rem;
+}
+
+.chaos-section4-left p {
+    height: 100%;
+    font-size: 5.5rem;
+    font-style: italic;
+    writing-mode: sideways-lr;
+    text-orientation: mixed;
+    font-weight: 300;
+}
+
+.chaos-section4-left::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    top: 0; bottom: 0; right: 0;
+    background: linear-gradient(0deg, transparent 0%, #ffffff 20%, #ffffff 80%, transparent 100%);
+}
+
+.chaos-section4-right > * {
+    margin-bottom: 2rem;
+}
+
+.chaos-section4-right {
+    padding-left: 5rem;
+}
+
+.chaos-section4-right h2 {
+    font-size: 6em;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: -1px;
+}
+
+.chaos-section4-right p {
+    font-size: 1.7rem;
+    font-weight: 200;
+    width: 650px;
+    max-width: 100%;
+    text-align: justify;
+}
+
+.chaos-section4-right .img-container {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.chaos-section4-right .img-container img:first-child { margin-bottom: 8rem; }
+.chaos-section4-right .img-container img:last-child { margin-top: 8rem; }
+
+.chaos-section4-right .img-note {
+    width: 536px;
+    text-align: right;
+    float: right;
+    color: #000000;
+    font-weight: 300;
+}
+
+.chaos-section4-1 {
+    background: linear-gradient(0deg, #ffffff 50%, transparent 70%),
+                linear-gradient(180deg, maroon 0%, transparent 80%),
+                url(image\ 23.png) 50% 25% / cover no-repeat;
+    color: #ffffff;
+}
+
+.chaos-section4-2 {
+    background: linear-gradient(180deg, #ffffff 0%, transparent 100%),
+                linear-gradient(0deg, maroon 0%, transparent 60%),
+                url(tutu.png) 50% 25% / cover no-repeat;
+    color: #000000;
+}
+
+.chaos-section4-2 .chaos-section4-right .img-note {
+    color: #ffffff;
+}
+
+.chaos-section4-2 .chaos-section4-left::after {
+    background: linear-gradient(0deg, transparent 0%, maroon 20%, maroon 80%, transparent 100%);
+}
+
+.chaos-section1-2 {
+    background: linear-gradient(180deg, #800000 0%, rgba(255,255,255,0) 50%), 
+                linear-gradient(0deg, #ffffff 0%, transparent 50%),
+                url(Rectangle\ 13.png) 50% 40% / cover no-repeat ; 
+    min-height: 140vh;
+    margin: 0;
+    padding: 6rem 
+}
+
+/* DOCUMENTARY */
+.documentary {
+    position: relative;
+    background-image: url("images/Gradient\ 05.png");
+    background-size: auto; /* Thay cover bằng auto để không phóng to */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.banner{
+    width: 100%;
+    height: 160vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .content{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1400px, 100vw);
+    height: max-content;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.banner .content h1{
+    font-family: Dela Gothic One;
+    font-size: 12em;
+    line-height: 1em;
+    color: maroon;
+    position: relative;
+    margin-top: -240px;
+    margin-left: 50px;
+}
+.banner .content h1::after{
+    position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 2;
+    -webkit-text-stroke: 2px #d2d2d2;
+    color: transparent;
+}
+
+.banner .content .model{
+    background-image: url(tank.png);
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: auto 120%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    z-index: 1;
+    transform: translateY(-60%);
+}
+
+.banner .content h2{
+    font-family: Dela Gothic One;
+    font-size: 13em;
+    line-height: 1em;
+    color: white;
+    position: relative;
+    margin-left: 50px;
+}
+
+.banner .slider{
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    top: 10%;
+    left: calc(50% - 100px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite;
+    z-index: 2;
+}
+
+@keyframes autoRun{
+    from{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+    }to{
+        transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+    }
+}
+
+.banner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform: 
+        rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+        translateZ(550px);
+}
+
+.banner .slider .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Content sections */
+.documentary-content-section {
+    font-size: 22px;
+    padding: 40px 0;
+    background-color: rgba(255,255,255,0.9);
+    
+}
+
+.cdhcm {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cdhcm-left, .cdhcm-right {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    gap: 40px;
+}
+
+.cdhcm-left img, .cdhcm-right img {
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.cdhcm-left p, .cdhcm-right p {
+    flex: 1;
+    font-size: 2.6rem;
+    line-height: 1.2;
+    color: #333;
+    font-weight: 300;
+}
+
+.cdhcm-right {
+    flex-direction: row-reverse;
+} 
+
+/* MEMBER */
+.member-background {
+    width: 100vw;
+    background: linear-gradient(0deg, #000000 0%, transparent 50%), #E8E8E8;
+}
+
+.member-section {
+    width: 1260px;
+    padding-bottom: 30rem;  
+    margin: 0 auto;  
+}
+
+.portrait {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: nowrap; 
+    width: 100%;
+}
+
+.portrait img {
+    width: calc(20% - 1rem);
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.title-row, .member-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-row h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Dela Gothic One", "Archivo", sans-serif;
+    margin-bottom: 0.6em;
+}
+
+.member-row {
+    border-bottom: 3px #000000 solid;
+    padding: 2.5rem 0 1.3rem 0;
+}
+
+.member-name {
+    font-size: 4.3rem;
+    font-weight: 200;
+    font-style: italic;
+}   
+
+.member-job {
+    font-size: 4.2rem;
+    font-weight: 200;
+    display: flex;
+    justify-content: right;
+    white-space: nowrap;
+}
+
+.member-job img {
+    height: 3rem;
+    position: relative;
+    top: 1rem;
+    margin-left: 1rem;
+}
+
